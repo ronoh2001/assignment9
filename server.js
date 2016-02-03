@@ -16,7 +16,7 @@ app.get('/articles', function(req, res) {
 models.sequelize.sync({force:true}).then(function(x) {
   models.Articles.create({
     author:'Ron Oh',
-    blog:'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+    blog:'Hello this is my blog.  I have a lot to catch up on, but this is a beginning.  Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
   })
 })
   app.listen(PORT, function() {
